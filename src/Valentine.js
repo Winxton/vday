@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import CuteCat from "./images/cute-cat.gif"; // Import the GIF file
+import VDayFinal from "./images/vday-final.webp";
 import VDay from "./images/vday-image.webp";
-import VDay2 from "./images/vday-image-2.webp";
-import VDay3 from "./images/vday-image-3.webp";
 
 import Italian from "./images/buca-osteria.jpeg";
 import Ramen from "./images/ramen.jpeg";
@@ -171,7 +170,7 @@ const Valentine = () => {
         <div>
           <button
             style={{
-              backgroundColor: "#FF5733",
+              backgroundColor: "#FF69B4",
               color: "white",
               margin: "10px",
               padding: "5px 10px",
@@ -193,16 +192,7 @@ const Valentine = () => {
     return (
       <div style={{ textAlign: "center", color: "#e75480" }}>
         <h1>See you then babbeee!</h1>
-        <img
-          src={VDay}
-          alt="valentine"
-          style={{ maxWidth: "500px", margin: "10px 0" }}
-        />
-        <img
-          src={VDay3}
-          alt="valentine"
-          style={{ maxWidth: "500px", margin: "10px 0" }}
-        />
+        <img src={VDayFinal} alt="valentine" style={{ width: 800 }} />
       </div>
     );
 
@@ -212,7 +202,7 @@ const Valentine = () => {
         <h2>Will you be my valentine?</h2>
 
         <div>
-          <img src={VDay2} alt="valentine" style={{ width: 400 }} />
+          <img src={VDay} alt="valentine" style={{ width: 400 }} />
         </div>
 
         {/* Show the yes button*/}
