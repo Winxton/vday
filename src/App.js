@@ -1,11 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-import ButtonComponent from './Valentine';
+import React from "react";
+import "./App.css";
+import Valentine from "./Valentine";
+import posthog from "posthog-js";
 
 function App() {
-  return (
-    <ButtonComponent/>
-  );
+  // Init in useEffect
+  React.useEffect(() => {
+    posthog.init("phc_yvDWObZxIX3c2ahGJURH14uFct8UIKPhJjNg23fLRPB", {
+      api_host: "https://app.posthog.com",
+    });
+  }, []);
+
+  return <Valentine />;
 }
 
 export default App;

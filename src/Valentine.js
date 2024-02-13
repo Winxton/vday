@@ -56,7 +56,7 @@ const SelectedRestaurant = () => {
   }
 };
 
-const ButtonComponent = () => {
+const Valentine = () => {
   const [counter, setCounter] = useState(0);
   const [currentPage, setCurrentPage] = useState("valentine"); // New state to manage pages: 'valentine', 'thankYou', 'destination', 'selectedDestination', 'finale'
 
@@ -212,7 +212,7 @@ const ButtonComponent = () => {
         <h2>Will you be my valentine?</h2>
 
         <div>
-          <img src={VDay2} alt="valentine" style={{ width: 300 }} />
+          <img src={VDay2} alt="valentine" style={{ width: 400 }} />
         </div>
 
         {/* Show the yes button*/}
@@ -255,4 +255,4 @@ const ButtonComponent = () => {
   }
 };
 
-export default ButtonComponent;
+export default Valentine;
